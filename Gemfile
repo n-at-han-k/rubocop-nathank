@@ -21,3 +21,5 @@ group :test do
 
   gem "bake-test"
 end
+
+gem "gem_kit-release"
