@@ -1,0 +1,52 @@
+# frozen_string_literal: true
+
+# This is the default configuration file for rubocop-nathan-k.
+# You can override any of these settings in your .rubocop.yml file.
+
+NathanK/BeginBlockAssignment:
+  Description: "Bans assigning a `begin...end` expression; the assignment goes inside the block."
+  Enabled: true
+  VersionAdded: "0.1.0"
+
+NathanK/CommentStructure:
+  Description: "How a comment is built: unwrapped paragraphs, a summary no longer than the code earns, and annotations on a documented interface."
+  Enabled: true
+  VersionAdded: "0.1.0"
+  MaximumWords: 30
+  BaseWords: 10
+  WordsPerLine: 3
+  ModuleWords: 10
+  Wrapping:
+    Enabled: true
+  Length:
+    Enabled: true
+  Annotations:
+    Enabled: true
+    Include:
+      - "lib/**/*.rb"
+      - "fixtures/**/*.rb"
+
+NathanK/NoConditionalAssignment:
+  Description: "Bans assigning an `if` / `case` expression; assign inside each branch instead."
+  Enabled: true
+  VersionAdded: "0.1.0"
+
+NathanK/NoModifierIf:
+  Description: "Bans modifier `if` / `unless`, so a guard cannot hide off the right edge of a long line."
+  Enabled: true
+  VersionAdded: "0.1.0"
+
+NathanK/NoReturn:
+  Description: "Bans `return`. The method's last expression is its return value, and guards are structural."
+  Enabled: true
+  VersionAdded: "0.1.0"
+
+NathanK/SingleLineMethodsForEvents:
+  Description: "A one-expression method body uses the endless form."
+  Enabled: true
+  VersionAdded: "0.1.0"
+
+NathanK/UseTap:
+  Description: "Requires `tap` where a method assigns a local on its first line and returns it on its last."
+  Enabled: true
+  VersionAdded: "0.1.0"
