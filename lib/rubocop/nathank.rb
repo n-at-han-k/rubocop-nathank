@@ -3,6 +3,8 @@
 # Released under the MIT License.
 # Copyright, 2026, by Nathan Kidd.
 
+require "rubocop"
+
 require_relative "nathank/version"
 require_relative "nathank/plugin"
 require_relative "nathank/begin_block_assignment"
