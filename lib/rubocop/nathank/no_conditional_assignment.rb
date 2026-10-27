@@ -22,7 +22,7 @@
 require_relative "support/prism_source"
 
 module RuboCop
-  module NathanK
+  module Nathank
     class NoConditionalAssignment < ::RuboCop::Cop::Base
       include PrismSource
       extend ::RuboCop::Cop::AutoCorrector

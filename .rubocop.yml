@@ -1,31 +1,31 @@
 plugins:
   - rubocop-md
-  - rubocop-nathan-k
+  - rubocop-nathank
 
 AllCops:
   DisabledByDefault: true
 
 # House style:
 
-NathanK/BeginBlockAssignment:
+Nathank/BeginBlockAssignment:
   Enabled: true
 
-NathanK/CommentStructure:
+Nathank/CommentStructure:
   Enabled: true
 
-NathanK/NoConditionalAssignment:
+Nathank/NoConditionalAssignment:
   Enabled: true
 
-NathanK/NoModifierIf:
+Nathank/NoModifierIf:
   Enabled: true
 
-NathanK/NoReturn:
+Nathank/NoReturn:
   Enabled: true
 
-NathanK/SingleLineMethodsForEvents:
+Nathank/SingleLineMethodsForEvents:
   Enabled: true
 
-NathanK/UseTap:
+Nathank/UseTap:
   Enabled: true
 
 # General Layout rules:

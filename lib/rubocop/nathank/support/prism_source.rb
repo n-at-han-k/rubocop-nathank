@@ -14,7 +14,7 @@
 require "prism"
 
 module RuboCop
-  module NathanK
+  module Nathank
     module PrismSource
       # @returns [Prism::ParseResult] the file, parsed once however many times this is called.
       def prism_result

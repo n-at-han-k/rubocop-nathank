@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-nathan-k (0.1.0)
+    rubocop-nathank (0.1.0)
       decode
       lint_roller
       prism
@@ -100,7 +100,7 @@ DEPENDENCIES
   gem_kit-release
   rubocop
   rubocop-md
-  rubocop-nathan-k!
+  rubocop-nathank!
   sus
 
 BUNDLED WITH

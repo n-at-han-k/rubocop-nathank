@@ -26,7 +26,7 @@
 require_relative "support/prism_source"
 
 module RuboCop
-  module NathanK
+  module Nathank
     class UseTap < ::RuboCop::Cop::Base
       include PrismSource
 

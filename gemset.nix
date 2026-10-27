@@ -313,7 +313,7 @@
     };
     version = "2.0.4";
   };
-  rubocop-nathan-k = {
+  rubocop-nathank = {
     dependencies = ["decode" "lint_roller" "prism" "rubocop"];
     groups = ["default"];
     platforms = [];

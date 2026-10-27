@@ -15,7 +15,7 @@
 require_relative "support/prism_source"
 
 module RuboCop
-  module NathanK
+  module Nathank
     class NoReturn < ::RuboCop::Cop::Base
       include PrismSource
       extend ::RuboCop::Cop::AutoCorrector

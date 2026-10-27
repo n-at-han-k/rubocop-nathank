@@ -44,7 +44,7 @@ require "decode/language/ruby/generic"
 require_relative "support/prism_source"
 
 module RuboCop
-  module NathanK
+  module Nathank
     class CommentStructure < ::RuboCop::Cop::Base
       include PrismSource
 

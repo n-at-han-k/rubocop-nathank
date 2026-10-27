@@ -3,4 +3,8 @@
 # Released under the MIT License.
 # Copyright, 2026, by Nathan Kidd.
 
-require_relative "rubocop/nathan_k"
+module RuboCop
+  module Nathank
+    VERSION = "0.1.0"
+  end
+end

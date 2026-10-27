@@ -6,7 +6,7 @@
 require_relative "support/prism_source"
 
 module RuboCop
-  module NathanK
+  module Nathank
     # Requires a method whose body is a single expression to use the endless method form.
     #
     # @example
