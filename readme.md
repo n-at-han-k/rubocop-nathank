@@ -16,6 +16,30 @@ plugins:
   - rubocop-nathank
 ```
 
+That is the whole configuration. The plugin sets `AllCops/DisabledByDefault`, so RuboCop's own
+cops are off and the ones below are on: the house style is what these cops say rather than what
+the defaults say, and a project does not have to list them to get them.
+
+A default you want back is enabled by name, and a house cop you do not want is disabled the same
+way, because your `.rubocop.yml` is merged over the plugin's:
+
+``` yaml
+# .rubocop.yml
+plugins:
+  - rubocop-nathank
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Nathank/NoReturn:
+  Enabled: false
+```
+
+What you must not do is set `AllCops/DisabledByDefault` yourself. The plugin already sets it, and
+your file is merged over the plugin's: setting it again takes the plugin's own cops off along with
+RuboCop's, and you get a run which inspects every file and reports nothing.
+
 ## Available Cops
 
 * `Nathank/BeginBlockAssignment` - no assigning a `begin...end`; the assignment goes inside.
@@ -23,7 +47,6 @@ plugins:
 * `Nathank/NoModifierIf` - no modifier `if` / `unless`, so a guard cannot hide off the right edge.
 * `Nathank/NoReturn` - no `return`; the last expression is the return value.
 * `Nathank/UseTap` - `tap` where a method assigns a local and returns it.
-* `Nathank/SingleLineMethodsForEvents` - a one-expression body uses the endless form.
 * `Nathank/CommentStructure` - how a comment is built: unwrapped paragraphs, a summary no longer
   than the code earns, and annotations on a documented interface.
 

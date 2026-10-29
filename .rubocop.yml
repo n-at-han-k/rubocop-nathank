@@ -2,31 +2,9 @@ plugins:
   - rubocop-md
   - rubocop-nathank
 
-AllCops:
-  DisabledByDefault: true
-
-# House style:
-
-Nathank/BeginBlockAssignment:
-  Enabled: true
-
-Nathank/CommentStructure:
-  Enabled: true
-
-Nathank/NoConditionalAssignment:
-  Enabled: true
-
-Nathank/NoModifierIf:
-  Enabled: true
-
-Nathank/NoReturn:
-  Enabled: true
-
-Nathank/SingleLineMethodsForEvents:
-  Enabled: true
-
-Nathank/UseTap:
-  Enabled: true
+# The plugin turns the defaults off and its own cops on, so the house style needs no mention
+# here, and `DisabledByDefault` must not be set again: that would take the house cops off too.
+# What follows is the defaults this project wants back.
 
 # General Layout rules:
 

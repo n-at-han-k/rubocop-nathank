@@ -98,11 +98,16 @@ module RuboCop
 
       # The statements of a body, whether it holds one or many.
       #
-      # @parameter body [Prism::StatementsNode | nil] the body of a method, module, or block.
+      # A method with its own `rescue` has a BeginNode body, whose statements are one level in.
+      #
+      # @parameter body [Prism::Node | Nil] the body of a method, module, or block.
       # @returns [Array(Prism::Node)] its statements, which is empty when there is no body.
       def prism_statements(body)
-        if body.nil?
+        case body
+        when nil
           []
+        when ::Prism::BeginNode
+          self.prism_statements(body.statements)
         else
           body.body
         end
