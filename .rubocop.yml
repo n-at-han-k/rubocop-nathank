@@ -19,9 +19,13 @@ Layout/IndentationWidth:
   Enabled: true
   Width: 2
 
+Layout/AccessModifierIndentation:
+  Enabled: true
+  EnforcedStyle: indent
+
 Layout/IndentationConsistency:
   Enabled: true
-  EnforcedStyle: normal
+  EnforcedStyle: indented_internal_methods
 
 Layout/BlockAlignment:
   Enabled: true

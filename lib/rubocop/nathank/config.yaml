@@ -7,6 +7,18 @@
 AllCops:
   DisabledByDefault: true
 
+Layout/AccessModifierIndentation:
+  Enabled: true
+  EnforcedStyle: indent
+
+Layout/IndentationConsistency:
+  Enabled: true
+  EnforcedStyle: indented_internal_methods
+
+Layout/IndentationWidth:
+  Enabled: true
+  Width: 2
+
 Nathank/BeginBlockAssignment:
   Description: "Bans assigning a `begin...end` expression; the assignment goes inside the block."
   Enabled: true
